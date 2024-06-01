@@ -6,9 +6,7 @@ body {
 .header {
     background-color: #1f2937;
     display: flex;
-    justify-content: space-around;
-    padding-left: 64px;
-    padding-right: 64px;
+    justify-content: space-between;
 }
 
 ul {
@@ -30,12 +28,10 @@ a {
 }
 
 .mainsection {
-    padding-left: 64px;
-    padding-right: 64px;
     background-color: #1f2937;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -50,7 +46,7 @@ a {
     margin-bottom: 4px;
 }
 
-.hero-subtext {
+.hero-subtext, .ctatext {
     font-size: 18px;
     color: #E5E7EB;
     margin-bottom: 8px;
@@ -67,4 +63,108 @@ button {
     background: #3882F6;
     padding: 8px 16px;
     color: white;
+}
+
+.section2 {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.main2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    text-align: center;
+}
+
+
+.content {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    display: block;
+}
+
+.fruits {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.section3 {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+    font-size: 24px;
+    font-weight: 800;
+    align-self: self-end;
+}
+
+.footer {
+    background-color: #1F2937;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: #E5E7EB;
+    font-size: 18px;
+    text-align: center;
+}
+
+.section4 {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctabox {
+    background-color: #3882F6;
+    border-radius: 8px;
+    height: 150px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.ctaheader {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F9FAF8;
+}
+
+.ctab {
+    border-radius: 8px;
+    border: solid 2px;
+    border-color: #E5E7EB;
+    padding-left: 30px;
+    padding-right: 30px;
 }
