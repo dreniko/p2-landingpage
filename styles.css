@@ -1,12 +1,26 @@
 body {
     font-family: sans-serif;
     margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .header {
     background-color: #1f2937;
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 ul {
@@ -20,6 +34,8 @@ ul {
     display: flex;
     justify-content: right;
     align-items: center;
+    width: 400px;
+    flex-shrink: 0;
 }
 
 a {
@@ -27,12 +43,21 @@ a {
     color: white;
 }
 
-.mainsection {
-    background-color: #1f2937;
-    margin: 0;
+.mainsection .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 34px;
+}
+
+.mainsection {
+    background-color: #1f2937;
+    margin: 0;
+}
+
+.heroimage {
+    width: 400;
+    height: auto;
 }
 
 .logo {
@@ -65,7 +90,7 @@ button {
     color: white;
 }
 
-.section2 {
+.section2 .container {
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -92,9 +117,13 @@ button {
 .info {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     text-align: center;
     display: block;
+}
+
+.text {
+    margin-top: 18px;
 }
 
 .fruits {
@@ -114,13 +143,17 @@ button {
 .quote {
     font-size: 36px;
     font-style: italic;
+    font-weight: 300;
     color: #1F2937;
 }
 
 .author {
     font-size: 24px;
     font-weight: 800;
-    align-self: self-end;
+    color: #1F2937;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
 }
 
 .footer {
@@ -144,15 +177,24 @@ button {
     align-items: center;
 }
 
+.section4 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+
 .ctabox {
     background-color: #3882F6;
     border-radius: 8px;
     height: 150px;
-    width: 1000px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 48px;
+    padding: 20px;
 }
 
 .ctaheader {
